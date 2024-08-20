@@ -1376,7 +1376,37 @@ main {
 }
 
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
 
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+/* When you change the amount of characters in the h1, you have to change 
+the with: 14ch and  steps(14, end), if there is 14 characters, put 14, 
+if there is 20 put 20 */
+.animation-writing {
+  font: bold 200% Consolas, Monaco, monospace;
+  position: absolute; 
+  bottom: 0;
+  right: 0;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  color: #f2f2f2;
+  border-right: .1em solid #f2f2f2;
+  width: 17.20ch;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 1s steps(17, end), 
+	           blink-caret .2s step-end infinite alternate;
+  animation: typing 1s steps(17, end),
+	           blink-caret .2s step-end infinite alternate;
+}
 
 
 /*-----------------------------------*\
@@ -2434,6 +2464,8 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-left: auto;
   }
 
+  
+  
 
   
 }

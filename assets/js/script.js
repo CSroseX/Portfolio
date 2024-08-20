@@ -159,4 +159,22 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-// DOWNLOAD BUTTON
+
+function copyEmail(element) {
+  // Create a temporary input element to copy the email address to clipboard
+  let tempInput = document.createElement("input");
+  tempInput.value = element.textContent;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand("copy");
+  document.body.removeChild(tempInput);
+
+  // Show the "Copied" message
+  let message = document.getElementById('copyMessage');
+  message.style.display = 'inline';
+
+  // Hide the message after 2 seconds
+  setTimeout(function() {
+      message.style.display = 'none';
+  }, 2000);
+}
