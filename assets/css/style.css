@@ -1402,9 +1402,9 @@ if there is 20 put 20 */
   width: 17.20ch;
   white-space: nowrap;
   overflow: hidden;
-  -webkit-animation: typing 1s steps(17, end), 
+  -webkit-animation: typing 4s steps(17, end), 
 	           blink-caret .2s step-end infinite alternate;
-  animation: typing 1s steps(17, end),
+  animation: typing 4s steps(17, end),
 	           blink-caret .2s step-end infinite alternate;
 }
 
