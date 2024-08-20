@@ -341,9 +341,9 @@ main {
   background: linear-gradient(
         to right,
         #ffffff 20%,
-        #00FFFF 30%,
-        #9cdf00 70%,
-        #efcdb3 80%
+        #00ffff 30%,
+        #000000 70%,
+        #c5947c 80%
     );
     -webkit-background-clip: text;
     background-clip: text;
