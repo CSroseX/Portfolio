@@ -336,7 +336,7 @@ main {
 /*-----------------------------------*\
   #SIDEBAR
 \*-----------------------------------*/
-
+/*  why is this not working ? #000000 70% */
 .special{
   background: linear-gradient(
         to right,
